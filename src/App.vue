@@ -13,38 +13,38 @@
           <div class="flex justify-between gap-4 my-6">
             <!-- Single Time weather -->
             <div class="flex flex-col items-center text-sm font-medium">
-              <p>20:00</p>
+              <p>01:00</p>
               <img class="w-6 h-6 my-1" src="./assets/sunny.gif" alt="" />
               <p>18<span>&#8451;</span></p>
             </div>
             <!--  -->
             <!-- Single Time weather -->
             <div class="flex flex-col items-center text-sm font-medium">
-              <p>20:00</p>
+              <p>07:00</p>
 
               <img class="w-6 h-6 my-1" src="./assets/rain.gif" alt="" />
-              <p>18<span>&#8451;</span></p>
+              <p>25<span>&#8451;</span></p>
             </div>
             <!--  -->
             <!-- Single Time weather -->
             <div class="flex flex-col items-center text-sm font-medium">
-              <p>20:00</p>
+              <p>13:00</p>
               <img class="w-6 h-6 my-1" src="./assets/sunny.gif" alt="" />
-              <p>18<span>&#8451;</span></p>
+              <p>20<span>&#8451;</span></p>
             </div>
             <!--  -->
             <!-- Single Time weather -->
             <div class="flex flex-col items-center text-sm font-medium">
-              <p>20:00</p>
+              <p>19:00</p>
               <img class="w-6 h-6 my-1" src="./assets/rain.gif" alt="" />
-              <p>18<span>&#8451;</span></p>
+              <p>22<span>&#8451;</span></p>
             </div>
             <!--  -->
             <!-- Single Time weather -->
             <div class="flex flex-col items-center text-sm font-medium">
-              <p>20:00</p>
+              <p>23:00</p>
               <img class="w-6 h-6 my-1" src="./assets/rain.gif" alt="" />
-              <p>18<span>&#8451;</span></p>
+              <p>19<span>&#8451;</span></p>
             </div>
             <!--  -->
           </div>
@@ -56,7 +56,7 @@
           <p class="text-sm font-medium">Details</p>
           <div class="flex items-baseline justify-between gap-5 mt-4">
             <div class="text-center">
-              <img class="" src="./assets/bi_sunrise.png" alt="" />
+              <img class="" src="./assets/icons8-sunrise-30.png" alt="" />
               <p class="text-xs text-center">{{ forecastData.astro?.sunrise }}</p>
             </div>
             <div>
@@ -65,7 +65,7 @@
               <!--  -->
             </div>
             <div>
-              <img class="" src="./assets/bi_sunrise.png" alt="" />
+              <img class="" src="./assets/sunsetImage.png" alt="" />
               <p class="text-xs text-center">{{ forecastData.astro?.sunset }}</p>
             </div>
           </div>
