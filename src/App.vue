@@ -2,8 +2,8 @@
   <FadeInOut entry="center" exit="center" :duration="400" appear>
     <div class="bg-[url('./assets/Background.png')] bg-black w-screen h-screen bg-auto bg-no-repeat grid sm:justify-center sm:items-center">
       <FadeInOut entry="center" exit="center" :duration="800" appear>
-        <div class="px-14 pt-8 pb-10 text-slate-200 backdrop-blur-sm backdrop-saturate-[10%] w-[500px] sm:rounded-lg bg-[#7e7e7ead]">
-          <div class="font-medium text-center">
+        <div class="px-7 sm:px-14 pt-8 pb-10 text-slate-200 backdrop-blur-sm backdrop-saturate-[10%] sm:w-[500px] sm:rounded-lg bg-[#7e7e7ead]">
+          <div class="mt-10 font-medium text-center sm:mt-0">
             <h1 class="text-xl font-medium">{{ weatherData.location?.name }}</h1>
             <p class="mt-5 mb-1 text-5xl font-semibold">{{ weatherData.current?.temp_c }}<span>&#8451;</span></p>
             <p class="text-sm font-normal">{{ weatherData.current?.condition.text }}</p>
@@ -59,9 +59,11 @@
               <img class="" src="./assets/bi_sunrise.png" alt="" />
               <p class="text-xs text-center">{{ forecastData.astro?.sunrise }}</p>
             </div>
-            <!-- Sun position Illustration -->
-            <img class="w-[280px]" src="./assets/Group 2.png" alt="" />
-            <!--  -->
+            <div>
+              <!-- Sun position Illustration -->
+              <img class="w-fit" src="./assets/Group 2.png" alt="" />
+              <!--  -->
+            </div>
             <div>
               <img class="" src="./assets/bi_sunrise.png" alt="" />
               <p class="text-xs text-center">{{ forecastData.astro?.sunset }}</p>
