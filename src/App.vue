@@ -61,7 +61,7 @@
             </div>
             <div>
               <!-- Sun position Illustration -->
-              <img class="w-fit" src="./assets/Group 2.png" alt="" />
+              <img class="w-fit" src="./assets/Group2.png" alt="" />
               <!--  -->
             </div>
             <div>
