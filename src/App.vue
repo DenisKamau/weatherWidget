@@ -101,7 +101,7 @@
 import { FadeInOut } from "vue3-transitions";
 
 const baseURL = "http://api.weatherapi.com/v1/";
-const apiKey = "21788228f1b349aa94e121023221306";
+const apiKey = import.meta.env.VITE_APP_API_KEY;
 
 const myRequest = new Request(`${baseURL}current.json?key=${apiKey}&q=Nairobi`, {
   method: "GET",
