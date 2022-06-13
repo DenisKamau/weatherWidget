@@ -2,7 +2,7 @@
   <FadeInOut entry="center" exit="center" :duration="400" appear>
     <div class="bg-[url('./assets/Background.png')] bg-black w-screen h-screen bg-auto bg-no-repeat grid sm:justify-center sm:items-center">
       <FadeInOut entry="center" exit="center" :duration="800" appear>
-        <div class="px-7 sm:px-14 pt-8 pb-10 text-slate-200 backdrop-blur-sm backdrop-saturate-[10%] sm:w-[500px] sm:rounded-lg bg-[#7e7e7ead]">
+        <div class="px-7 sm:px-14 pt-8 pb-10 text-slate-200 backdrop-blur-sm sm:w-[500px] sm:rounded-3xl bg-[#5656562e]">
           <div class="mt-10 font-medium text-center sm:mt-0">
             <h1 class="text-xl font-medium">{{ weatherData.location?.name }}</h1>
             <p class="mt-5 mb-1 text-5xl font-semibold">{{ weatherData.current?.temp_c }}<span>&#8451;</span></p>
@@ -74,19 +74,19 @@
           <div class="flex items-center justify-between w-full mt-10 text-center align-middle">
             <div>
               <p class="font-semibold">{{ weatherData.current?.feelslike_c }}<span>&#8451;</span></p>
-              <p class="text-sm">RealFeel</p>
+              <p class="text-sm text-[#7a7a7a]">RealFeel</p>
             </div>
             <div>
               <p class="font-semibold">{{ weatherData.current?.humidity }}%</p>
-              <p class="text-sm">Humidity</p>
+              <p class="text-sm text-[#7a7a7a]">Humidity</p>
             </div>
             <div>
               <p class="font-semibold">{{ weatherData.current?.gust_kph }}</p>
-              <p class="text-sm">W, force</p>
+              <p class="text-sm text-[#7a7a7a]">W, force</p>
             </div>
             <div>
               <p class="font-semibold">{{ weatherData.current?.pressure_mb }}Pa</p>
-              <p class="text-sm">Pressure</p>
+              <p class="text-sm text-[#7a7a7a]">Pressure</p>
             </div>
           </div>
           <!--  -->
@@ -101,7 +101,7 @@
 import { FadeInOut } from "vue3-transitions";
 
 const baseURL = "http://api.weatherapi.com/v1/";
-const apiKey = "020124c63a8f40089cb60926221006";
+const apiKey = "21788228f1b349aa94e121023221306";
 
 const myRequest = new Request(`${baseURL}current.json?key=${apiKey}&q=Nairobi`, {
   method: "GET",
@@ -147,5 +147,3 @@ export default {
   },
 };
 </script>
-
-<style></style>
